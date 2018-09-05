@@ -1,0 +1,274 @@
+@font-face {
+    font-family: VarelaRound;
+    src: url('../VarelaRound-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*noinspection CssNoGenericFontName*/
+    font-family: VarelaRound;
+}
+html {
+    height: 100%;
+}
+
+body {
+    /*background: linear-gradient(to bottom, #9e7ae3, #8766cc, #7152b6, #5a3fa0, #442d8b) no-repeat fixed;*/
+    /*background-blend-mode: color-burn;*/
+    background: #303030;
+    display: block;
+}
+
+/*#region navbar*/
+.navbar {
+    overflow: hidden;
+    background-color: #252525;
+    color: white;!important;
+
+    border-bottom: none #2c68e1;
+}
+
+.navbar a:hover {
+    transition: color 0.2s linear, border-bottom-color 0.2s ease-in-out;
+
+    background-color: #353535;
+    border-bottom: #2c68e1 solid 2px;
+    color: #2c68e1;
+}
+
+/* i need to use this because i else the .active color won't override the .nav */
+a {
+    color: white;
+}
+
+.nav-left {
+}
+
+.nav-left a {
+    float: left;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px 10px 15px 10px;
+
+}
+
+.nav-right {
+}
+
+.nav-right a {
+    float: right;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px 10px 15px 10px;
+}
+
+.active {
+    background-color: #303030;
+    color: #2c68e1;
+    border-bottom: #2c68e1 solid 2px;
+    font-weight: bold;
+}
+
+/*#endregion */
+/*#region Foooter*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding-bottom: 75px;
+    padding-top: 26px;
+    border-top: #2c68e1 solid 3px;
+}
+
+.footer-left {
+    float: left;
+    padding: 25px 0 20px 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer-right {
+    float: right;
+    padding: 25px 50px 20px 0;
+    font-size: 17px;
+}
+
+.fa {
+    float: left;
+    padding: 10px;
+    margin: 8px 2px 0 2px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 30px;
+    background-color: #323232;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    transition: color 0.2s linear;
+    color: #2c68e1;
+}
+
+.footer-right a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    border-bottom: none
+}
+
+.footerTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-bottom: #2c68e1 solid 3px;
+    margin-bottom: 10px;
+}
+
+.ft-list {
+    padding-top: 8px;
+}
+
+.ft-list a:hover {
+    transition: color 0.2s linear;
+    color: #2c68e1;
+}
+
+/*#endregion */
+/*#region Snapchat hover name*/
+
+.fa-snapchat {
+    position: relative;
+    display: inline-block;
+}
+
+.fa-snapchat .snapchat-tooltip {
+    visibility: hidden;
+    font-size: 18px;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 55px;
+    left: -30px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.fa-snapchat:hover .snapchat-tooltip {
+    visibility: visible;
+}
+
+/*#endregion */
+/*#region Card */
+.card {
+    margin: 10px;
+    background-color: #444444;
+    width: 300px;
+    height: 400px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(5, 5, 5, 0.33);
+    transition: margin-top 0.2s ease-in-out;
+}
+
+.card-text {
+    padding: 20px;
+    color: #d2d2d2;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.card:hover {
+    transition: margin-top 0.2s ease-in-out;
+    margin-top: -5px;
+
+}
+
+/* #endregion*/
+
+
+.box1 {
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: white;
+}
+
+
+.test {
+    width: 100%;
+    display: block;
+    padding: 50px 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-cards {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    /*padding: 0 15px 0 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.footer_copyright {
+    width: fit-content;
+}
+
+.contianer-homepage1{
+    margin: 50px 25px 0 25px;
+    /*padding: 50px 10px 0 10px;*/
+}
+.text {
+    color: white;
+    width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+/* TODO: Helpfull tips
+
+!important; = it will override the setting if there is something else is override-ing it
+padding: 0 0 0 0; = top right bottom left;
+contenteditable="true" = you can edit in the browser your text and copy the soruce from elements to your code
+
+
+
+
+
+*/
+
+/*#region region-Name*/
+/*#endregion */
