@@ -24,8 +24,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #252525;
-    color: white;!important;
-
+    color: white;
     border-bottom: none #2c68e1;
 }
 
@@ -42,8 +41,7 @@ a {
     color: white;
 }
 
-.nav-left {
-}
+
 
 .nav-left a {
     float: left;
@@ -53,8 +51,7 @@ a {
 
 }
 
-.nav-right {
-}
+
 
 .nav-right a {
     float: right;
@@ -74,14 +71,15 @@ a {
 /*#region Foooter*/
 
 .footer {
-    position: fixed;
+    margin-top: 50px;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #252525;
     color: white;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 250px;
     padding-top: 26px;
     border-top: #2c68e1 solid 3px;
 }
