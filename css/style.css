@@ -214,6 +214,39 @@ a {
     color: white;
 }
 
+.container-1 {
+    column-count: 2;
+    column-gap: 10px;
+    background: #323232;
+    color:white;
+    margin: 15px;
+    column-width: 100px;
+
+
+
+    /* width: 100%;
+    background: #323232;
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+    padding: 5px 0 5px 0; 
+    overflow: hidden;  */
+}
+
+
+
+
+.projects-1 text {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+
+.projects-1 img {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
 
 .test {
     width: 100%;
@@ -227,9 +260,7 @@ a {
     flex-wrap: wrap;
     display: flex;
     width: 100%;
-    /*padding: 0 15px 0 15px;*/
-    margin-right: auto;
-    margin-left: auto;
+    margin: 10px 30px 0 30px;
 }
 
 
@@ -240,7 +271,7 @@ a {
 
 .contianer-homepage1{
     margin: 50px 25px 0 25px;
-    /*padding: 50px 10px 0 10px;*/
+    /* padding: 50px 10px 0 10px; */
 }
 .text {
     color: white;
